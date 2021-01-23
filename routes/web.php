@@ -13,11 +13,17 @@
 
 Route::resource('/', 'HomeController');
 Route::resource('/news', 'NewsPageController');
+Route::resource('/features', 'FeaturesPageController');
+Route::resource('/screenshots', 'ScreenshotsPageController');
+Route::resource('/ourhistory', 'OurhistoryPageController');
 
 Route::prefix('admin')
     ->namespace('Admin')
     ->group(function() {
     Route::resource('/', 'DashboardController');
     Route::resource('/news', 'NewsController');
+    Route::resource('/features', 'FeaturesController');
+    Route::resource('/screenshots', 'ScreenshotsController');
+    Route::resource('/ourhistory', 'OurhistoryController');
 
     });

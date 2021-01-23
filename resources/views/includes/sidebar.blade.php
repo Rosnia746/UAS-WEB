@@ -26,7 +26,21 @@
             <i class="fas fa-fw fa-newspaper"></i>
             <span>News</span></a>
     </li>
-
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('features.index')}}">
+            <i class="fas fa-fw fa-newspaper"></i>
+            <span>Features</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('screenshots.index')}}">
+            <i class="fas fa-fw fa-newspaper"></i>
+            <span>Screenshots</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('ourhistory.index')}}">
+            <i class="fas fa-fw fa-newspaper"></i>
+            <span>Our History</span></a>
+    </li>
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 
