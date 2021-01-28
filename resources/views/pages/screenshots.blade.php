@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sesi 11</title>
+    <title>HomeKeeper</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,7 +17,7 @@
     <section class="satu mb-5">
         <div class="header-background">
             <div class="container">
-                <header class="header">
+            <header class="header">
                     <nav class="navbar navbar-expand-lg navbar-dark">
                         <div class="container-fluid">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,7 +25,7 @@
                                 aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <a class="navbar-brand" href="{{url('/')}}"><img
+                            <a class="navbar-brand" href=" {{url('/')}}"><img
                                     src="assets/img/HomeKeeper_Logo_InCloud.png" alt=""></a>
                             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -38,11 +38,11 @@
                                             TOUR
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">FEATURES</a></li>
-                                            <li><a class="dropdown-item" href="#">SCREEN SHOTS</a></li>
-                                            <li><a class="dropdown-item" href="#">TAKE A TOUR</a></li>
-                                            <li><a class="dropdown-item" href="#">TAKE A TEST DRIVE</a></li>
-                                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                            <li><a class="dropdown-item" href="{{url('/features')}}">FEATURES</a></li>
+                                            <li><a class="dropdown-item" href="{{url('/screenshots')}}">SCREEN SHOTS</a></li>
+                                            <li><a class="dropdown-item" href="">TAKE A TOUR</a></li>
+                                            <li><a class="dropdown-item" href="">TAKE A TEST DRIVE</a></li>
+                                            <li><a class="dropdown-item" href="">FAQ</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item active dropdown">
@@ -51,8 +51,8 @@
                                             WHY HOMEKEEPER
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">PEOPLE LOVE US</a></li>
-                                            <li><a class="dropdown-item" href="#">HOUSING COUNSELING</a></li>
+                                            <li><a class="dropdown-item" href="{{url('/peopleloveus')}}">PEOPLE LOVE US</a></li>
+                                            <li><a class="dropdown-item" href="{{url('/housingcounseling')}}">HOUSING COUNSELING</a></li>
                                             <li><a class="dropdown-item" href="#">IMPACT MEASUREMENT</a></li>
                                             <li><a class="dropdown-item" href="#">ONLINE PROGRAM FORMS</a></li>
                                             <li><a class="dropdown-item" href="#">AWESOME SUPPORT</a></li>
@@ -60,7 +60,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active active" aria-current="page" href="#">PRICING</a>
+                                        <a class="nav-link active active" aria-current="page" href="{{url('/pricing')}}">PRICING</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink"
@@ -68,10 +68,10 @@
                                             ABOUT US
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">OUR HISTORY</a></li>
+                                            <li><a class="dropdown-item" href="{{url('/ourhistory')}}">OUR HISTORY</a></li>
+                                            <li><a class="dropdown-item" href="{{url('/ourteam')}}">OUR TEAM</a></li>
                                             <li><a class="dropdown-item" href="#">OUR PARTICIPATING ORGANIZATIONS</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">OUR TEAM</a></li>
                                             <li><a class="dropdown-item" href="#">OUR VIDEOS</a></li>
                                             <li><a class="dropdown-item" href="#">OUR LATEST NEWS</a></li>
                                             <li><a class="dropdown-item" href="#">CONTACT US</a></li>
@@ -108,8 +108,10 @@
     </section>
     <section>
         <div class="container">
+        <h1 class="text-center py-5" >Screenshots</h1>
             @foreach ($items as $item)
             <div class="content ">
+            
                 <div class="row">
                     <div class="col-sm-6">
                     <img src="{{Storage::url($item->image)}}" alt="image" class="img-thumbnail mb-3" />

@@ -16,6 +16,11 @@ Route::resource('/news', 'NewsPageController');
 Route::resource('/features', 'FeaturesPageController');
 Route::resource('/screenshots', 'ScreenshotsPageController');
 Route::resource('/ourhistory', 'OurhistoryPageController');
+Route::resource('/ourteam', 'OurteamPageController');
+Route::resource('/peopleloveus', 'PeopleloveusPageController');
+Route::resource('/housingcounseling', 'HousingcounselingPageController');
+Route::resource('/pricing', 'PricingPageController');
+
 
 Route::prefix('admin')
     ->namespace('Admin')
@@ -25,5 +30,10 @@ Route::prefix('admin')
     Route::resource('/features', 'FeaturesController');
     Route::resource('/screenshots', 'ScreenshotsController');
     Route::resource('/ourhistory', 'OurhistoryController');
+    Route::resource('/ourteam', 'OurteamController');
+    Route::resource('/peopleloveus', 'PeopleloveusController');
+    Route::resource('/housingcounseling', 'HousingcounselingController');
+    Route::resource('/pricing', 'PricingController');
+
 
     });

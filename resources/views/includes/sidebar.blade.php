@@ -37,10 +37,31 @@
             <span>Screenshots</span></a>
     </li>
     <li class="nav-item">
+        <a class="nav-link" href="{{route('peopleloveus.index')}}">
+            <i class="fas fa-fw fa-newspaper"></i>
+            <span>People Love Us </span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('housingcounseling.index')}}">
+            <i class="fas fa-fw fa-newspaper"></i>
+            <span>Housing Counseling </span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('pricing.index')}}">
+            <i class="fas fa-fw fa-newspaper"></i>
+            <span>Pricing </span></a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" href="{{route('ourhistory.index')}}">
             <i class="fas fa-fw fa-newspaper"></i>
             <span>Our History</span></a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('ourteam.index')}}">
+            <i class="fas fa-fw fa-newspaper"></i>
+            <span>Our Team</span></a>
+    </li>
+
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 
