@@ -92,11 +92,22 @@ section.enam {
 
 section.enam main.enam {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
     line-height: 2;
     text-align: left;
     color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    section.enam main.enam {
+        display: none;
+    }
+}
+
+.menu-footer ul {
+    padding-left: unset;
 }
 
 section.enam main.enam img {
@@ -105,6 +116,7 @@ section.enam main.enam img {
 
 section.enam main.enam .menu-footer {
     display: flex;
+    flex-flow: wrap;
     font-size: 18px;
     list-style: none;
 }

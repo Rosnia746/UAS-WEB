@@ -17,6 +17,7 @@ class NewsController extends Controller
     public function index()
     {
         $items = News::all();
+        dd($items);
         return view('pages.admin.news.index', compact('items'));
     }
 

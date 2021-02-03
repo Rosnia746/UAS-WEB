@@ -24,6 +24,7 @@ Route::resource('/pricing', 'PricingPageController');
 
 Route::prefix('admin')
     ->namespace('Admin')
+    ->middleware(['auth', 'admin'])
     ->group(function() {
     Route::resource('/', 'DashboardController');
     Route::resource('/news', 'NewsController');
@@ -34,6 +35,6 @@ Route::prefix('admin')
     Route::resource('/peopleloveus', 'PeopleloveusController');
     Route::resource('/housingcounseling', 'HousingcounselingController');
     Route::resource('/pricing', 'PricingController');
-
-
     });
+
+Auth::routes();
