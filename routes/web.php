@@ -35,6 +35,8 @@ Route::prefix('admin')
     Route::resource('/peopleloveus', 'PeopleloveusController');
     Route::resource('/housingcounseling', 'HousingcounselingController');
     Route::resource('/pricing', 'PricingController');
-    });
+    Route::resource('/about', 'AboutController');
+    Route::resource('/about2', 'About2Controller');
+});
 
 Auth::routes();

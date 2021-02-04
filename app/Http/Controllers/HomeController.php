@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\About;
+use App\About2;
+use App\Features;
+use App\Peopleloveus;
 
 class HomeController extends Controller
 {
@@ -19,6 +23,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.home');
+        $about = About::all();
+        $about2 = About2::all();
+        $features = Features::all();
+        $peopleloveus = Peopleloveus::all();
+
+        return view('pages.home',compact('about', 'about2', 'features', 'peopleloveus'));
+    
     }
 }

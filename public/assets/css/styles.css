@@ -73,6 +73,13 @@ section.lima .btn {
     border-radius: 20px;
 }
 
+section.empat .img {
+    height: 180px;
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+}
+
 section.empat .content ul li {
     list-style: none !important;
     color: #f7941e;

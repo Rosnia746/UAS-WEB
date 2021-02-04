@@ -20,7 +20,22 @@
 
     <!-- Divider -->
     <hr class="sidebar-divider">
-
+    <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="{{route('about.index')}}">What is HomeKeeper</a>
+                        <a class="collapse-item" href="{{route('about2.index')}}">Why HomeKeeper</a>
+                        <a class="collapse-item" href="{{route('features.index')}}">Features</a>
+                        <a class="collapse-item" href="{{route('peopleloveus.index')}}">People Love Us</a>
+                    </div>
+                </div>
+            </li>
     <li class="nav-item">
         <a class="nav-link" href="{{route('news.index')}}">
             <i class="fas fa-fw fa-newspaper"></i>
